@@ -10,7 +10,7 @@
 ## id服务用于统一管理生成可用ID列表
 
 #### 数据库主键ID获取
-* URL: `/id/allocate`
+* URL: `/allocate`
 * Method:   GET
 * 功能描述：根据表名获取一定数量的数据库主键ID。
 * 请求参数： 
