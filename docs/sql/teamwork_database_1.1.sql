@@ -116,7 +116,7 @@ CREATE TABLE tbl_work_staff(
 	fid INT NOT NULL,
 	sid INT NOT NULL,
 	staff INT NOT NULL, -- uid
-	KEY(sid, staff),
+	PRIMARY KEY(sid, staff),
 	FOREIGN KEY staff REFERENCES tbl_user ON DELETE CASCADE,
 	FOREIGN KEY pid REFERENCES tbl_project ON DELETE CASCADE,
 	FOREIGN KEY fid REFERENCES tbl_function ON DELETE CASCADE,
