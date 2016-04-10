@@ -8,6 +8,8 @@
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## id服务用于统一管理生成可用ID列表
+* domain: `api`
+* feature: `id`
 
 #### 数据库主键ID获取
 * URL: `/allocate`
