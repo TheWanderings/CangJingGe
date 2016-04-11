@@ -55,10 +55,10 @@
 
 * Return：VOID
 
-#### 忘记密码 ？？？这个是干什么 的？
-* URL: `/miss_psw`
+#### 提交注册邮箱
+* URL: `/send_mail_addr`
 * Method:   POST
-* 功能描述：忘记密码。
+* 功能描述：用于忘记密码时提交注册邮箱再重新设置密码。
 * 请求参数： 
      
 | 参数名称   | 参数类型  |是否必须 | 描述                                    
@@ -66,13 +66,33 @@
 | email   | string   |  是 | email|
 
 
-* 返回参数：
+* 返回参数：VOID
 
-* Example:
+#### 修改密码
+* URL: `/modify_psw`
+* Method:   POST
+* 功能描述：修改密码。
+* 请求参数： 
+     
+| 参数名称   | 参数类型  |是否必须 | 描述                                    
+| ----------|---------- |------| ---------------------------|
+| email   | string   |  是 | email|
+| old_password   | string   |  是 | 原来密码|
+| new_password   | string   |  是 | 新密码|
 
-```json
 
-     code:200
+* 返回参数：VOID
+* 
+#### 重置密码
+* URL: `/reset_psw`
+* Method:   POST
+* 功能描述：用于忘记密码时重新设置密码。
+* 请求参数： 
+     
+| 参数名称   | 参数类型  |是否必须 | 描述                                    
+| ----------|---------- |------| ---------------------------|
+| email   | string   |  是 | email|
+| new_password   | string   |  是 | 新密码|
 
-```
 
+* 返回参数：VOID
